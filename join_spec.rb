@@ -57,7 +57,7 @@ RESULT
     ARGV << '-1'
     ARGV << '3'
     ARGV << '-2'
-    ARGV << '3'
+    ARGV << '4'
     ARGV << '-o'
     ARGV << '1.1 2.1 2.7'
     ARGV << 'a.txt'
@@ -65,7 +65,6 @@ RESULT
     join = Join.main ignored_options
     result = <<-RESULT.lstrip
 root:root:/bin/bash
-avahi-autoipd:sshd:/usr/sbin/nologin
 katarina:katarina:/bin/bash
     RESULT
     expect(join.result).to eq result

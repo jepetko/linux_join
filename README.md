@@ -7,5 +7,6 @@ ruby implementation of the join command
 Example:
 
 ```bash
-ruby join.rb -t ':' -1 3 -2 3 -o '1.1 2.1 2.7' /etc/group /etc/passwd
+# join /etc/group and /etc/passwd by the primary group ID
+ruby join.rb -t ':' -1 3 -2 4 -o '1.1 2.1 2.7' /etc/group /etc/passwd
 ```
